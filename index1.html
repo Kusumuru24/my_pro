@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color Changer</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      margin-top: 100px;
+      transition: background-color 0.5s;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Click the button to change background color</h1>
+  <button onclick="changeColor()">Change Color</button>
+
+  <script>
+    function changeColor() {
+      let colors = ["red", "blue", "green", "yellow", "purple", "orange"];
+      let randomColor = colors[Math.floor(Math.random() * colors.length)];
+      document.body.style.backgroundColor = randomColor;
+    }
+  </script>
+</body>
+</html>
